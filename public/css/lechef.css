@@ -1,0 +1,81 @@
+/*intro*/
+section#lechef{
+    background: url(/assets/images/lechef/shadow.png), url(/assets/images/lechef/Page-Le-Chef-B.jpg) ;
+    background-size: contain, cover;
+    background-position: 0 0px, center;
+    background-repeat: no-repeat;
+    height: 100%; width: 100%;
+}
+
+h2 {
+  font-size: 53px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+  top: 600px;
+}
+
+
+#swipedownDuck{
+    text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+    width: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*page*/
+
+/*chef bio*/
+
+#chefbio{
+    display: flex;
+    
+}
+
+#chefbio div img{
+  text-shadow: 0px 32px 80.64px rgba(200, 174, 136, 0.28);
+  width: 40%;
+}
+
+#chefbio div p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: right;
+}
+
+#chefbio div{
+    border-right: 1px solid rgb(200,174,136);
+    width: 35%;
+    padding-right: 20px;
+}
+
+#lechef-content{
+    width: 100%;
+    background-color: rgb(32,32,32);
+}
+
+#chef-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+
+#chef-title h3 {
+  font-size: 25px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 74;
+}
+
+#ducktitle{
+    width: 25px;
+    margin: 0px 70px;
+}

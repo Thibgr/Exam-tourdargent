@@ -1,0 +1,14 @@
+{
+  "name": "tourdargent",
+  "version": "1.0.0",
+  "description": "Redesign of the Tour d'argent website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thibault GERMAIN",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

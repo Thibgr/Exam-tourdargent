@@ -1,0 +1,144 @@
+/*Font import*/
+
+@font-face {
+  font-family: "LeMonde Livre Classic";
+  src: url("../assets/font/LeMondeLivreClassic-Normal.woff");
+}
+
+/*body*/
+body {
+    background-color: rgb(32,32,32);
+    margin: 0 auto;
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/*home section*/
+section#home{
+    background: url(/assets/images/home-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; width: 100%;
+}
+
+/*Header*/
+
+section #menuheader li img{
+    width: 80px;
+    float: left;
+}
+
+section #menuheader li{
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200,174,136);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+section #menuheader li:hover{
+    color: rgb(255,255,255);
+}
+
+
+section ul{
+    list-style-type: none;
+}
+
+
+section header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section #menuheader{
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Menus déroulants*/
+
+#menuheader ul{
+    display: none;
+}
+
+#menuheader li:hover > ul{
+        display: block;
+}
+
+/*footer*/
+
+footer{
+    height: 40px;
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(32,32,32);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+}
+
+ul#footerleft{
+    display: flex;
+    margin-left: 20px;
+}
+
+#footerleft li a{
+    font-family: "LeMonde Livre Classic";
+    color: white;
+    margin-left: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    text-decoration: none;
+}
+
+ul#footerright{
+    display: flex;
+    margin-right: 20px;
+}
+
+#footerright li{
+    font-family: "LeMonde Livre Classic";
+    color: white;
+    margin-right: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+#footerright li a{
+    height: 25px; width: 25px;
+    background: url(/assets/images/social-sprite.png) no-repeat;
+    display:block;
+}
+
+#footerright li a#Facebook{
+    background-position: 0px 0px;
+}
+
+#footerright li a#Twitter{
+    background-position: -25px 0px;
+}
+
+#footerright li a#Instagram{
+    background-position: -50px 0px;
+}
+
+#footerright li a#googleplus{
+    background-position: -75px 0px;
+}
+
+#footerright li a#flickr{
+    background-position: -100px 0px;
+}
+
+#footerright li a#linkedIn{
+    background-position: -125px 0px;
+}
