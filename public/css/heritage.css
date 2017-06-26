@@ -1,0 +1,120 @@
+/*intro*/
+section#heritage{
+    background: url(/assets/images/heritage/Page-Heritage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; width: 100%;
+    position: relative;
+}
+
+section#heritage>div{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+  font-size: 53px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+  top: 600px;
+}
+
+
+#swipedownDuck{
+    text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+    width: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*page*/
+
+/* Presentation famille */
+
+.whitespace{
+    width: 100%; height: 400px;
+    background-color: white;
+    clear: both;
+}
+
+.blackspace{
+    width: 100%; height: 400px;
+    background-color: rgb(32,32,32);
+    clear: both;
+}
+
+.blackspace .txt-bio{
+    float: right;
+    padding: 80px 50px;
+    width: 40%;
+}
+
+.whitespace .txt-bio{
+    float: left;
+    padding: 80px 50px;
+    width: 40%;
+}
+
+#heritage-content div#ATpic{
+    background: url('/assets/images/heritage/Page-Heritage-2-Andre-Terrail.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px; width: 500px;
+    float: left;
+}
+
+#heritage-content div#CTpic{
+    background: url('/assets/images/heritage/Claude-Terrail-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px; width: 500px;
+    float: right;
+}
+
+#heritage-content div#ATspic{
+    background: url('/assets/images/heritage/Page-Heritage-4-Andre-Terrail.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px; width: 500px;
+    float: left;
+}
+
+#heritage-content .whitespace h4{
+  font-size: 45px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(200, 174, 136);
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#heritage-content .blackspace h4{
+  font-size: 45px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(200, 174, 136);
+  line-height: 1.2;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+#heritage-content .blackspace p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: right;
+}
+
+#heritage-content .whitespace p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(32, 32, 32);
+  line-height: 1.2;
+  text-align: left;
+}

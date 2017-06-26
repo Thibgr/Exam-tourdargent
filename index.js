@@ -17,6 +17,11 @@ app.get('/lechef', function(req,res){
     res.sendFile(__dirname + '/views/lechef.html');
 })
 
+app.get('/heritage', function(req,res){
+    console.log('REQ on /heritage, with redirection ')
+    res.sendFile(__dirname + '/views/heritage.html');
+})
+
 app.listen(port, function(){
     console.log('app listening on port ' + port)
 });

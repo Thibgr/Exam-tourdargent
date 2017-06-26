@@ -1,10 +1,18 @@
 /*intro*/
 section#lechef{
-    background: url(/assets/images/lechef/shadow.png), url(/assets/images/lechef/Page-Le-Chef-B.jpg) ;
-    background-size: contain, cover;
-    background-position: 0 0px, center;
+    background: url(/assets/images/lechef/Page-Le-Chef-B.jpg) ;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100%; width: 100%;
+    position: relative;
+}
+
+section#lechef>div{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h2 {
@@ -31,7 +39,6 @@ h2 {
 
 #chefbio{
     display: flex;
-    
 }
 
 #chefbio div img{
@@ -45,6 +52,7 @@ h2 {
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: right;
+  margin-bottom: 25px;
 }
 
 #chefbio div{
@@ -74,6 +82,29 @@ h2 {
   text-align: center;
   z-index: 74;
 }
+
+/*Exergue*/
+
+#exerguechef{
+}
+
+#exerguechef p{
+    font-size: 28px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin: 200px auto;
+}
+
+#exerguechef p span{
+  font-size: 198px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(200, 174, 136);
+  text-transform: uppercase;}
 
 #ducktitle{
     width: 25px;
