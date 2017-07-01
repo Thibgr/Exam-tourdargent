@@ -1,0 +1,259 @@
+/*intro*/
+section#carte{
+    background: url(/assets/images/carte/cartebg.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; width: 100%;
+    position: relative;
+}
+
+section#carte>div{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+  font-size: 53px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+  top: 600px;
+}
+
+
+#swipedownDuck{
+    text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+    width: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*page*/
+
+#carte-content{
+    background-color: rgb(32,32,32);
+}
+
+/*Title*/
+.carte-title:first-child{
+    padding-top: 200px;
+}
+
+.carte-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 80px;
+    clear: both;
+}
+
+.carte-title h3 {
+    font-size: 25px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 74;
+    line-height: 0.7;
+
+}
+
+.carte-title h3 span {
+  font-size: 16px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: none;
+}
+
+
+.menu-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 80px;
+    clear: both;
+}
+
+.menu-title h3 {
+    font-size: 25px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 74;
+    line-height: 1.2;
+
+}
+
+.menu-title h3 span {
+  font-size: 16px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: none;
+}
+
+#ducktitle{
+    width: 25px;
+    margin: 0px 70px;
+}
+
+
+/*Plates*/
+
+.carte-plats div{
+    float: left;
+    padding: 0px 50px;
+    width: 40%;
+    
+}
+
+.carte-plats{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.carte-plats div h4{
+  font-size: 23px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(200, 174, 136);
+}
+
+.carte-plats div h4 span{
+    font-size: 23px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200, 174, 136);
+    text-transform: uppercase;
+    float: right;
+}
+
+.carte-plats div p{
+    font-size: 17px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.398;
+    text-align: left;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    width: 90%;
+}
+
+#carte-content>h4{
+    font-size: 23px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200, 174, 136);
+    text-transform: uppercase;
+    text-align: center;
+    clear: both;
+    margin-bottom: 40px;
+}
+
+#carte-content>p{
+    width: 50%;
+    font-size: 17px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.398;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    padding-bottom: 50px;
+}
+
+
+#carte-content{
+    padding-bottom: 70px;
+}
+
+/*Responsive*/
+
+
+@media screen and (max-width: 1140px) {
+    .carte-plats div{
+    float: none;
+    padding: 0px 50px;
+    width: calc(100vw - 100px);
+}
+
+.carte-plats{
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.carte-plats div h4{
+  font-size: 23px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(200, 174, 136);
+}
+
+.carte-plats div h4 span{
+    font-size: 23px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200, 174, 136);
+    text-transform: uppercase;
+    float: right;
+}
+
+.carte-plats div p{
+    font-size: 17px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.398;
+    text-align: left;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    width: 90%;
+}
+
+#carte-content>h4{
+    font-size: 23px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200, 174, 136);
+    text-transform: uppercase;
+    text-align: center;
+    clear: both;
+    margin-bottom: 40px;
+}
+
+#carte-content>p{
+    width: 50%;
+    font-size: 17px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.398;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    padding-bottom: 50px;
+}
+
+
+#carte-content{
+    padding-bottom: 70px;
+}
+    
+    .carte-title h3 {
+    font-size: 25px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 74;
+    line-height: 0.7;
+
+}
+    
+    
+}

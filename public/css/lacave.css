@@ -35,7 +35,27 @@ h2 {
 
 /*page*/
 
+#lacave-content{
+    background-color: rgb(32,32,32);
+}
+
 /*Title*/
+.lacave-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+
+.lacave-title h3 {
+  font-size: 25px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 74;
+}
 
 #ducktitle{
     width: 25px;
@@ -115,27 +135,6 @@ h2 {
     float: left;
     width: 35%;
     margin-bottom: 100px;
-}
-
-#lacave-content{
-    background-color: rgb(32,32,32);
-}
-
-.cave-title{
-    display: flex;
-    justify-content: center;
-    padding-top: 200px;
-    margin-bottom: 100px;
-}
-
-.cave-title h3 {
-  font-size: 25px;
-  font-family: "LeMonde Livre Classic";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-  z-index: 74;
 }
 
 

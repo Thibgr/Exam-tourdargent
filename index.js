@@ -29,8 +29,18 @@ app.get('/heritage', function(req,res){
 })
 
 app.get('/lacave', function(req,res){
-    console.log('REQ on /lacvave, with redirection ')
+    console.log('REQ on /lacave, with redirection ')
     res.sendFile(__dirname + '/views/lacave.html');
+})
+
+app.get('/carte', function(req,res){
+    console.log('REQ on /carte, with redirection ')
+    res.sendFile(__dirname + '/views/carte.html');
+})
+
+app.get('/reservation', function(req,res){
+    console.log('REQ on /reservation, with redirection ')
+    res.sendFile(__dirname + '/views/reservation.html');
 })
 
 app.listen(port, function(){

@@ -1,0 +1,270 @@
+/*intro*/
+section#reservation{
+    background: url(/assets/images/reservation/9L4B9905.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; width: 100%;
+    position: relative;
+}
+
+section#reservation>div{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+  font-size: 53px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+  top: 600px;
+}
+
+
+#swipedownDuck{
+    text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+    width: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*page*/
+
+#reservation-content{
+    background-color: rgb(32,32,32);
+    height: 500px;
+}
+
+/*Form*/
+
+#reservation-content form{
+    width: 80%;
+    margin: 150px auto;
+}
+
+#reservation-content form input, select, div{
+    float: left;
+}
+
+
+/*Input*/
+
+form>input{
+    background: rgb(32,32,32);
+    border: none;
+    border-bottom: 1px solid rgb(200,174,136);
+    width: 20%;
+    padding: 0px 20px;
+    outline: none;
+}
+
+form>input,
+form>input::-webkit-input-placeholder{
+  font-size: 20px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+#telephoneInput{
+    width: 40%;
+}
+
+/*Radio buttons*/
+
+
+#reservation-content form .hour{
+    width: 40%;
+    margin: 90px 95px 50px 20px;
+}
+
+#reservation-content form h3{
+    font-size: 23px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200, 174, 136);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hour input[type="radio"] {
+  display: none;
+}
+
+.hour label {
+    display: inline-block;
+    background-color: rgb(32,32,32);
+    padding: 10px 20px;
+    font-family: "LeMonde Livre Classic";
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 20px 40px 20px 0px;
+    color: white;
+}
+
+.hour input[type="radio"]:checked+label {
+    background-color: rgb(200,174,136);
+    color: rgb(32,32,32);
+}
+
+
+/*Select*/
+
+#styled-select select {
+    background: transparent;
+    font-size: 20px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+    appearance: none; 
+    width: 100%;
+    padding-bottom: 4px;
+    padding-left: 20px;
+   }
+
+#styled-select {
+    height: 26px;
+    overflow: hidden;
+    background: url(/assets/images/uikit/arrows.png) no-repeat right rgb(32,32,32);
+    background-size: 8%;
+    border-bottom: 1px solid rgb(200,174,136);
+    width: 20%;
+    margin: 0px 50px;
+   }
+
+form>input:last-child{
+    float: none;
+    padding: 15px 20px 10px 20px;
+    width: auto;
+    border-radius: 25px;
+    border: 1px solid rgb(200,174,136);
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200,174,136);
+    cursor: pointer;
+}
+
+form>input:last-child:hover{
+    float: none;
+    padding: 15px 20px 10px 20px;
+    width: auto;
+    border-radius: 25px;
+    border: 1px solid rgb(200,174,136);
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    background-color: rgb(200,174,136);
+    color: rgb(32,32,32);
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1140px) {
+    /*David ridgway pres*/
+
+    .whitespace{
+        height: auto;
+    }
+
+
+    .whitespace div#pic{
+        background: url('/assets/images/lacave/La-cave-david.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px; width: 100%;
+        float: none;
+    }
+
+    .whitespace .txt-bio{
+        float: none;
+        background: white;
+        padding: 80px 50px;
+        width: calc(100vw - 100px);
+        height: 100%;
+    }
+    
+    
+/*    CAVE STORY*/
+    
+    #cave-story div:first-child p{
+        font-size: 18px;
+        font-family: "LeMonde Livre Classic";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    #cave-story div:first-child{
+        border-left: none;
+        padding-left: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+        float: none;
+        width: calc(100vw - 100px);
+        margin-bottom: 25px;
+    }
+    
+    #cave-story div:last-child{
+        width: 100%;
+        height: 300px;
+        background: url(/assets/images/lacave/La-Cave-bouteilles.jpg);
+        background-size: 150% auto;
+        background-position: -150px -50px;
+        background-repeat: no-repeat;
+        float: right;
+        margin-bottom: 100px
+    }
+    
+/*    Eboutique*/
+    
+    #Eboutique{
+        clear: both;
+    }
+
+    #Eboutique>img{
+        width: 300px;
+        padding: 20px 50px;
+        float: none;
+        padding-bottom: 70px;
+        margin: 0 auto;
+        display: block ;
+    }
+
+    #Eboutique div{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: 200px;
+    }
+    
+    #Eboutique div p{
+        font-size: 29px;
+        font-family: "LeMonde Livre Classic";
+        color: rgb(200, 174, 136);
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        padding-top: 0px;
+    }
+
+    #Eboutique div a{
+        font-size: 22px;
+        font-family: "LeMonde Livre Classic";
+        color: rgb(32, 32, 32);
+        text-transform: uppercase;
+        padding: 25px 50px 20px 50px;
+        background-color: rgb(200, 174, 136);
+        border-radius: 50px;
+        text-decoration: none;
+    }
+}
