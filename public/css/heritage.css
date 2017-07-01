@@ -42,29 +42,24 @@ h2 {
     padding-top: 150px;
 }
 
-.whitespace{
-    width: 100%; height: 400px;
-    background-color: white;
-    clear: both;
-}
+
 
 .blackspace{
-    width: 100%; height: 400px;
-    background-color: rgb(32,32,32);
-    clear: both;
+    height: 400px;
 }
 
 .blackspace .txt-bio{
     float: right;
     padding: 80px 50px;
-    width: 40%;
+    width: calc(100% - 600px);
+    min-width:400px;
+    height: 240px;
 }
 
-.whitespace .txt-bio{
-    float: left;
-    padding: 80px 50px;
-    width: 40%;
+.whitespace{
+    height: 400px;
 }
+
 
 #heritage-content div#ATpic{
     background: url('/assets/images/heritage/Page-Heritage-2-Andre-Terrail.jpg');
@@ -72,6 +67,15 @@ h2 {
     background-repeat: no-repeat;
     height: 400px; width: 500px;
     float: left;
+}
+
+.whitespace .txt-bio{
+    float: left;
+    background: white;
+    padding: 80px 50px;
+    width: calc(100% - 600px);
+    min-width:400px;
+    height: 240px;
 }
 
 #heritage-content div#CTpic{
@@ -99,6 +103,14 @@ h2 {
   text-transform: uppercase;
 }
 
+#heritage-content .whitespace p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(32, 32, 32);
+  line-height: 1.2;
+  text-align: left;
+}
+
 #heritage-content .blackspace h4{
   font-size: 45px;
   font-family: "LeMonde Livre Classic";
@@ -116,10 +128,3 @@ h2 {
   text-align: right;
 }
 
-#heritage-content .whitespace p{
-  font-size: 18px;
-  font-family: "LeMonde Livre Classic";
-  color: rgb(32, 32, 32);
-  line-height: 1.2;
-  text-align: left;
-}

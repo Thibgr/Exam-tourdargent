@@ -37,14 +37,17 @@ h2 {
 
 /*chef bio*/
 
-#chefbio{
-    display: flex;
+#chefbio {
+    width: 100vw;
+    overflow-x:none;
+}
+#chefbio>img{
+  text-shadow: 0px 32px 80.64px rgba(200, 174, 136, 0.28);
+  width: 50%;
+  float: left;
 }
 
-#chefbio div img{
-  text-shadow: 0px 32px 80.64px rgba(200, 174, 136, 0.28);
-  width: 40%;
-}
+
 
 #chefbio div p{
   font-size: 18px;
@@ -59,6 +62,8 @@ h2 {
     border-right: 1px solid rgb(200,174,136);
     width: 35%;
     padding-right: 20px;
+    float: right;
+    margin-right: 100px;
 }
 
 #lechef-content{
@@ -86,6 +91,10 @@ h2 {
 /*Exergue*/
 
 #exerguechef{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    clear: both;
 }
 
 #exerguechef p{
@@ -94,19 +103,52 @@ h2 {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.2;
-    text-align: center;
-    width: 50%;
     display: block;
-    margin: 200px auto;
+    margin: 200px auto 0px auto;
+    width: 80%;
 }
 
-#exerguechef p span{
-  font-size: 198px;
-  font-family: "LeMonde Livre Classic";
-  color: rgb(200, 174, 136);
-  text-transform: uppercase;}
+#exerguechef img:last-child{
+    transform: rotate(180deg);
+    float: right;
+    width: 50px;
+    margin-bottom: 100px;
+}
+
+#exerguechef img:first-child{
+    width: 50px;
+    float: left;
+}
 
 #ducktitle{
     width: 25px;
     margin: 0px 70px;
+}
+
+
+@media screen and (max-width: 640px) {
+ #chefbio>img {
+    width: 80%;
+    clear: both;
+    float: none;
+  }
+    
+ #chefbio div{
+    border: none;
+    width: 400px;
+    text-align: center;
+    padding: 50px 50px 0px 50px;
+    float: none;
+    margin: 0 auto;
+  }
+    
+
+#chefbio div p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 25px;
+}
 }

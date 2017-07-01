@@ -21,11 +21,20 @@
 	margin-bottom: 20px;
 }
 
+#timeline #issues h3{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(200, 174, 136);
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 	#timeline {
 		width: 800px;
-		height: 350px;
+		height: 450px;
 		overflow: hidden;
-		margin: 100px auto;
+		margin: 150px auto;
 		position: relative;
 		background: url('/assets/images/timelinr/golddot.gif') left 45px repeat-x;
         clear: both;
@@ -72,7 +81,7 @@
 				
 				#issues li img {
 					float: left;
-					margin: 10px 30px 10px 50px;
+					margin: 10px 30px 50px 50px;
 					background: transparent;
 					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
 					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
@@ -101,7 +110,7 @@
 					margin-right: 70px;
 					font-weight: normal;
 					line-height: 22px;
-                    font-size: 18px;
+                    font-size: 15px;
                     font-family: "LeMonde Livre Classic";
                     color: rgb(255, 255, 255);
                     line-height: 1.2;

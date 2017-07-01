@@ -1,12 +1,8 @@
 //Varaiables
 
 var express = require('express');
-var ejs = require('ejs');
 var app = express(),
     port = 1337;
-
-//EJS 
-app.set('view engine', 'ejs');
 
 //Secure
 
@@ -33,7 +29,7 @@ app.get('/heritage', function(req,res){
 })
 
 app.get('/lacave', function(req,res){
-    console.log('REQ on /heritage, with redirection ')
+    console.log('REQ on /lacvave, with redirection ')
     res.sendFile(__dirname + '/views/lacave.html');
 })
 
