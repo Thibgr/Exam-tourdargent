@@ -1,0 +1,190 @@
+/*intro*/
+section#contact{
+    background: url(/assets/images/contact/la-tour-d_argent.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; width: 100%;
+    position: relative;
+}
+
+section#contact>div{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+  font-size: 53px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+  top: 600px;
+}
+
+
+#swipedownDuck{
+    text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+    width: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*page*/
+
+#contact-content{
+    background-color: rgb(32,32,32);
+    padding: 150px 0px;
+}
+
+#contact-content #contact-map{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#contact-content #contact-map>div{
+    width: 400px;
+    float: left;
+    padding: 50px 0px;
+    margin-right: 50px;
+}
+
+#contact-content #contact-map>iframe{
+    float: right;
+    margin-bottom: 100px;
+    border: 1px solid rgb(200,174,136)
+}
+
+#contact-content #contact-map>div p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+
+
+
+/*Responsive*/
+
+
+@media screen and (max-width: 640px) {
+    #invitation-content form .invitedhost p{
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+  }
+    
+    #invitation-content form p{
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    margin: 20px auto;
+  }
+    
+    /*Input*/
+
+form>input{
+    background: rgb(32,32,32);
+    border: none;
+    border-bottom: 1px solid rgb(200,174,136);
+    padding: 0px 20px;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+form>input,
+form>input::-webkit-input-placeholder{
+  font-size: 20px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+form .quarter-Form{
+    width: 27%;
+    margin: 0px 25px 50px 25px;
+}
+
+form .half-Form{
+    width: 80%;
+    margin: 0px 25px 50px 25px;
+}
+
+form .full-Form{
+    width: 80%;
+    margin: 0px 25px 50px 25px;
+}
+    
+    /*Select*/
+
+#styled-select select {
+    background: transparent;
+    font-size: 16px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+    appearance: none; 
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-bottom: 50px;
+   }
+
+#styled-select {
+    height: 26px;
+    overflow: hidden;
+    background: url(/assets/images/uikit/arrows.png) no-repeat right rgb(32,32,32);
+    background-size: 8%;
+    border-bottom: 1px solid rgb(200,174,136);
+    width: 37%;
+    margin: 0px 25px 50px 25px;
+   }
+    
+form>input,
+form>input::-webkit-input-placeholder{
+  font-size: 16px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+    
+    
+    /*submit button*/
+
+#invitation-content form>input:last-child{
+    float: none;
+    padding: 15px 20px 10px 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(200,174,136);
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200,174,136);
+    cursor: pointer;
+    float: right;
+    margin-right: 0px;
+}
+
+#invitation-content form>input:last-child:hover{
+    background-color: rgb(200,174,136);
+    color: rgb(32,32,32);
+}
+}

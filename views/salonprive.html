@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour d'argent - Le chef</title>
+    <title>Tour d'argent - Salon privé</title>
     
 <!--Style-->
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/home.css">
-    <link rel="stylesheet" href="/assets/css/lechef.css">
-    <link rel="stylesheet" href="/assets/css/swiper.css">
+    <link rel="stylesheet" href="/assets/css/salonprive.css">
+    <link rel="stylesheet" href="/assets/css/jquery/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/css/jquery/jquery-ui.structure.css">
+    <link rel="stylesheet" href="/assets/css/jquery/jquery-ui.theme.css">
     
 <!--Script for centering-->
     <script>window.onload=function(){setInterval(function(){document.getElementsByTagName("body")[0].style.height=window.innerHeight+"px"},0);}</script>
     
 <!--Jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery-ui.js"></script>
+	
+	<script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+    </script>
+
 	
 </head>
 
 <body>
  
- <header>
+<header>
           <ul id="menuheader">
               <li>
                  découvrir
@@ -68,10 +78,10 @@
           </ul>
       </header>
       
-  <section id="lechef">
+  <section id="salonprive">
       
       <div>
-          <h2>Le chef</h2>   
+          <h2>Salon privé</h2>   
           <svg version="1.1" id="swipedownDuck" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 17.9 15.5" style="enable-background:new 0 0 17.9 15.5;" xml:space="preserve">
                 <style type="text/css">
@@ -88,8 +98,30 @@
             
    </section>
       
-    <section id="lechef-content">
-        <div id="chef-title">
+    <section id="salonprive-content">
+      
+        
+        <section id="salon-intro">
+                <div>
+                    <p>
+                        Si vous souhaitez être contacté pour l’organisation d’un petit-déjeuner, d’un déjeuner ou d’un dîner dans notre Salon Privé, merci de remplir le formulaire ci-dessous, nous reviendrons vers vous dans les plus brefs délais.
+                    </p>
+                    <p>
+                        Situé au cinquième étage, notre Salon Privé propose dans un cadre élégant et confortable une vue unique sur Paris, Notre-Dame et la Seine.
+                    </p>
+                    <p>
+                        Nous pouvons accueillir de 15 à 50 personnes, ce qui en fait un lieu idéal pour l’organisation d’évènements privés, de petit-déjeuners, de réunions d’affaires, de déjeuners ou de dîners.
+                    </p>
+                </div>
+                
+                <div>                
+                    <a href="http://www.comptoirdelatour.com/">brochure</a>
+                </div>
+
+                
+             </section>
+             
+        <div class="salon-title">
                   <svg version="1.1" id="ducktitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                        viewBox="0 0 15.5 17.9" style="enable-background:new 0 0 15.5 17.9;" xml:space="preserve">
                   <style type="text/css">
@@ -103,7 +135,7 @@
                   </g>
                   </svg>
 
-                  <h3>Phillipe labbé <br>champenois la tenacité</h3>
+                  <h3>Demande<br>de réservation</h3>
 
                   <svg version="1.1" id="ducktitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                        viewBox="0 0 15.5 17.9" style="enable-background:new 0 0 15.5 17.9;" xml:space="preserve">
@@ -119,57 +151,76 @@
                   </svg>
               </div>
 
-            <!-- Bio -->
+        <!--Form-->
+    
+        <form action="">
 
-            <section id="chefbio">
-                <img src="/assets/images/lechef/assiette.png" alt="plat">
-                <div>
-                    <p>
-                        Champenois d’origine, il a travaillé vingt ans aux côtés des plus grands Chefs avant de diriger lui-même les cuisines du Château de Bagnols de 2001 à 2003 et celle du Château de la Chèvre d’Or à Eze de février 2003 à août 2009.
-                    </p>
-                    <p>
-                        Après avoir obtenu son diplôme de l’École Hôtelière d’Illkirch à Strasbourg il rejoint, en 1981, la brigade du Chef Bernard Loiseau au restaurant La Côte d’Or à Saulieu. Il évoluera ensuite auprès d’autres Chefs comme Gérard Boyer au restaurant Les Crayères à Reims ou encore Roger Vergé au Moulin de Mougins. Il a par ailleurs une solide expérience des beaux hôtels, de renommée internationale, comme le Carlton à Cannes ou le Plaza Athénée à Paris.
-                    </p>
-                    <p>
-                        Philippe Labbé a travaillé trois ans à l’hôtel Martinez à Cannes, au sein de la brigade de Christian Willer, un Chef reconnu comme l’un des meilleurs Chefs d’Hôtel de sa génération auprès duquel Philippe Labbé a appris la rigueur et les enjeux de la restauration d’un grand hôtel.
-                    </p>
-                    <p>
-                        Philippe Labbé propose une cuisine traditionnelle revisitée qui connaît depuis plusieurs années les honneurs des gastronomes du monde entier.
-                    </p>
-                    <p>
-                        Il affectionne les mariages de saveurs originales sublimant des produits de haute qualité et apporte une attention toute particulière à la carte des desserts qui doit être en parfaite harmonie avec sa cuisine.
-                    </p>
-                </div>
-            </section>
+            <h3>Vos invités</h3>
 
-            <!-- Exergue -->
+            <input type="text" placeholder="Nom*" class="half-Form">
 
-            <section id="exerguechef">
-                <img src="/assets/images/lechef/quotes.svg" alt="quotes">
-                <p>Je souhaite donner la même émotion dans l’assiette qu’en regardant à travers la baie vitrée. </p>
-                <img src="/assets/images/lechef/quotes.svg" alt="quotes">
-      </section>
-
-        
-        
-        <!-- Slider meals -->
-        
-        <section class="swiper-container">
-           
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <img src="/assets/images/lechef/slider/Brochet-sauvage-des-Gravi%C3%A8res-de-V%C3%A9theuil-quenelle-hommage-au-grand-p%C3%A8re-sauce-fleurette-champ%C3%AAtre-verveine-....jpg" alt="Assiette" class="swiper-slide">
-                        <img src="/assets/images/lechef/slider/Tomates-bio-multicolores-de-pleine-terre-de-Vincent-Libourel-floralie-crue-et-confite-basilics-aux-fleurs-d%C3%A9t%C3%A9-glace-burrata-%E2%80%9Cbao%E2%80%9D-ti%C3%A8de-truffes-noires-V2.jpg" alt="Assiette" class="swiper-slide">
-                        <img src="/assets/images/lechef/slider/Comme-un-vacherin-fraises-des-bois-mangue.jpg" alt="Assiette" class="swiper-slide">
-                        <img src="/assets/images/lechef/slider/Chocolat-lait-mousse-caramel-sorbet-chocolat-blanc-ambr%C3%A9-lait-d%C3%A9shydrat%C3%A9-V1.jpg" alt="Assiette" class="swiper-slide">
-                    </div>
+            <div class="styled-select">  
+                <select name="civilite" id="civilite">
+                    <option value="Mme" selected>Mme*</option>
+                    <option value="Mr">Mr*</option>
+                </select>
+            </div>
             
-        </section>
-      
-      
-      
-      <footer>
+            <input type="text" id="datepicker" placeholder="Date" class="quarter-Form">
+
+            <input type="text" placeholder="Prénom*" class="half-Form" aria-required="true">
+            <input type="text" placeholder="Societé" class="half-Form">
+            
+            <input type="text" placeholder="Adresse*" class="full-Form" aria-required="true">
+            
+            <input type="text" placeholder="Ville*" class="half-Form" aria-required="true">
+            
+            <input type="text" placeholder="Code postal*" class="quarter-Form" aria-required="true">
+            
+            <input type="text" placeholder="Pays*" class="quarter-Form" aria-required="true">
+            
+            <input type="email" placeholder="Adresse E-mail*" class="half-Form" aria-required="true">
+           
+            <input type="tel" placeholder="Téléphone*" class="half-Form" aria-required="true">
+            
+            <input type="text" placeholder="Informations complémentaires" class="full-Form">
+
+           <div class="styled-select">  
+                <select name="dinorlunch" id="dinorlunch" aria-required="true">
+                    <option value="lunch" selected>Déjeuner*</option>
+                    <option value="dinner">Diner*</option>
+                </select>
+            </div>
+            
+            <label for="couverts">couverts*</label>
+            <input type="number" name="couverts" value="15" min="15" aria-required="true" id="couverts">
+            
+            <!-- .squaredOne -->
+            <div class="squaredOne">
+              <input type="checkbox" value="Je souhaite recevoir les dernières actualités de la Tour d’Argent" id="squaredOne" name="newsletter" checked />
+              <label for="squaredOne"></label>
+            </div>
+    <!-- end .squaredOne -->
+            
+            <p id="newsletter-label">Je souhaite recevoir les dernières actualités de la Tour d’Argent</p>
+            
+            <p id="legend-fields">* champs obligatoires</p>
+            
+            <input type="submit" value="Envoyer">
+
+        </form>
+        
+        <p>Ces informations sont tenues strictement confidentielles et en vertu de la loi relative à l’information et aux libertés n° 78-17 du 06/01/1978, 
+        notre clientèle conserve tout droit de regard et de modification.</p>
+        
+        <div id="picView"></div>
+   
+    
+           
+
+
+  
+<footer>
           <ul id="footerleft">
               <li><a href="#">mentions légales</a></li>
               <li><a href="#">recrutement</a></li>
@@ -185,7 +236,7 @@
               <li><a href="https://www.flickr.com/photos/tourdargentparis/" id="flickr"></a></li>
               <li><a href="https://www.linkedin.com/company-beta/3162633/" id="linkedIn"></a></li>
           </ul>
-      </footer>
+</footer>
   </section>
   
   

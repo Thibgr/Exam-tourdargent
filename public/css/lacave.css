@@ -40,14 +40,21 @@ h2 {
 }
 
 /*Title*/
-.lacave-title{
+.cave-title:first-child{
     display: flex;
     justify-content: center;
     padding-top: 200px;
     margin-bottom: 100px;
 }
 
-.lacave-title h3 {
+.cave-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.cave-title h3 {
   font-size: 25px;
   font-family: "LeMonde Livre Classic";
   color: rgb(255, 255, 255);

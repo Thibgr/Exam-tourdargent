@@ -15,3 +15,13 @@ $('header').delay(1000).fadeIn(500);
       mousewheelControl: true,
     })        
   });
+
+// INIT GOOGLE MAPS API
+
+var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('mapParis'), {
+          center: {lat: 48.849771, lng: 2.355042},
+          zoom: 16
+        });
+      }

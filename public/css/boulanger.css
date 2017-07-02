@@ -1,0 +1,137 @@
+/*intro*/
+section#boulanger{
+    background: url(/assets/images/boulanger/boulanger-1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; width: 100%;
+    position: relative;
+}
+
+section#boulanger>div{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+  font-size: 53px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+  top: 600px;
+}
+
+
+#swipedownDuck{
+    text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+    width: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*map*/
+
+#boulanger-content #contact-map{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#boulanger-content #contact-map>div{
+    width: 400px;
+    float: left;
+    padding: 50px 0px;
+    margin-right: 50px;
+}
+
+#boulanger-content #contact-map>iframe{
+    float: right;
+    margin-bottom: 100px;
+    border: 1px solid rgb(200,174,136)
+}
+
+#boulanger-content #contact-map>div p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+
+/*boulanger*/
+
+#presentationBoulanger {
+    width: 100vw;
+    padding-top: 150px;
+    margin-bottom: 200px;
+    overflow-x:none;
+}
+#presentationBoulanger>img{
+  text-shadow: 0px 32px 80.64px rgba(200, 174, 136, 0.28);
+  width: 40%;
+  float: left;
+}
+
+
+
+#presentationBoulanger div p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+#presentationBoulanger div p:last-child{
+  margin-bottom: 0px;
+}
+
+#presentationBoulanger div{
+    border-right: 1px solid rgb(200,174,136);
+    width: 35%;
+    padding-right: 20px;
+    float: right;
+    margin-right: 100px;
+}
+
+#boulanger-content{
+    width: 100%;
+    background-color: rgb(32,32,32);
+}
+
+
+
+/*Responsive*/
+
+@media screen and (max-width: 640px) {
+ #presentationBoulanger>img {
+    width: 80%;
+    clear: both;
+    float: none;
+  }
+    
+ #presentationBoulanger div{
+    border: none;
+    width: 400px;
+    text-align: center;
+    padding: 50px 50px 0px 50px;
+    float: none;
+    margin: 0 auto;
+  }
+    
+
+#presentationBoulanger div p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 25px;
+}
+}

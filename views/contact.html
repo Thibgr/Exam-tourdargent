@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour d'argent - Réservation</title>
+    <title>Tour d'argent - Contact</title>
     
 <!--Style-->
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/home.css">
-    <link rel="stylesheet" href="/assets/css/reservation.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="stylesheet" href="/assets/css/jquery/jquery-ui.css">
     <link rel="stylesheet" href="/assets/css/jquery/jquery-ui.structure.css">
     <link rel="stylesheet" href="/assets/css/jquery/jquery-ui.theme.css">
@@ -78,10 +78,10 @@
           </ul>
       </header>
       
-  <section id="reservation">
+  <section id="contact">
       
       <div>
-          <h2>Réservation</h2>   
+          <h2>Contact</h2>   
           <svg version="1.1" id="swipedownDuck" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 17.9 15.5" style="enable-background:new 0 0 17.9 15.5;" xml:space="preserve">
                 <style type="text/css">
@@ -98,77 +98,33 @@
             
    </section>
       
-    <section id="reservation-content">
-       
-    <!--Form-->
-    
-    <form action="">
-        
-        <input type="text" id="datepicker" placeholder="Date">
-        
-        <div id="styled-select">  
-            <select name="invited" id="invited">
-                <option value="personnes" selected>personnes</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select>
-        </div>
-
-
-        <input type="tel" placeholder="Téléphone" id="telephoneInput">
-
-
-        <div class="hour">
-            <h3>Déjeuner</h3>
-
-            <input type="radio" id="1200" name="reservation" value="1200">
-            <label for="1200">12h00</label>
-
-            <input type="radio" id="1230" name="reservation" value="1230">
-            <label for="1230">12h30</label>
-
-            <input type="radio" id="1300" name="reservation" value="1300">
-            <label for="1300">13h00</label>
-
-            <input type="radio" id="1330" name="reservation" value="1330">
-            <label for="1330">13h30</label>
-        </div>
-    
-        
-        <div class="hour">
-            <h3>Diner</h3>
-            
-            <input type="radio" id="1900" name="reservation" value="1900">
-            <label for="1900">19h00</label>
-            
-            <input type="radio" id="1930" name="reservation" value="1930">
-            <label for="1930">19h30</label>
-            
-            <input type="radio" id="2000" name="reservation" value="2000">
-            <label for="2000">20h00</label>
-            
-            <input type="radio" id="2030" name="reservation" value="2030">
-            <label for="2030">20h30</label>
-            
-            <input type="radio" id="2100" name="reservation" value="2100">
-            <label for="2100">21h00</label>
-            
-            <input type="radio" id="2130" name="reservation" value="2130">
-            <label for="2130">21h30</label>
-        </div>
-        
-        <input type="submit" value="Envoyer">
-        
-    </form>    
-    
-           
-
+    <section id="contact-content">
+      
+      
+        <section id="contact-map"> 
+                <div>
+                    <p>
+                        15 Quai de la Tournelle, 75005 Paris, France
+                    </p>
+                    <p>
+                        Réservation par téléphone: + 33(0)1 43 54 23 31 <br>
+                        E-mail : resa@tourdargent.com
+                    </p>
+                    <p>
+                        Fermé dimanche & lundi
+                    </p>
+                    <p>
+                        Service Voiturier
+                        Métro Pont-Marie
+                        Nous n’acceptons pas les règlements par chèque.
+                    </p>
+                </div>
+                
+                <iframe src="https://snazzymaps.com/embed/862" width="500px" height="300px" style="border:none;"></iframe>
+          </section>
 
   
-<footer>
+    <footer>
           <ul id="footerleft">
               <li><a href="#">mentions légales</a></li>
               <li><a href="#">recrutement</a></li>
@@ -191,6 +147,8 @@
 <!--JS-->
   <script src="/assets/js/page.js"></script>
   <script src="/assets/js/swiper.jquery.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFTAK5E8U65kHbAD679-eKKHf8yTcs1MA&callback=initMap"
+    async defer></script>
    
 </body>
 </html>

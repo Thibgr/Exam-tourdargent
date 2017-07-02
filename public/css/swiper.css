@@ -37,7 +37,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: 1;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -105,7 +104,6 @@
   top: 0;
   pointer-events: none;
   opacity: 0;
-  z-index: -1000;
 }
 /* IE10 Windows Phone 8 Fixes */
 .swiper-wp8-horizontal {
@@ -124,7 +122,6 @@
   width: 27px;
   height: 44px;
   margin-top: -22px;
-  z-index: 10;
   cursor: pointer;
   -moz-background-size: 27px 44px;
   -webkit-background-size: 27px 44px;
@@ -178,7 +175,6 @@
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  z-index: 10;
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
@@ -321,7 +317,6 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 10;
 }
 .swiper-container-3d .swiper-slide-shadow-left {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
@@ -389,7 +384,6 @@ button.swiper-pagination-bullet {
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
-  z-index: 1;
 }
 .swiper-container-cube .swiper-slide .swiper-slide,
 .swiper-container-flip .swiper-slide .swiper-slide {
@@ -409,7 +403,6 @@ button.swiper-pagination-bullet {
 .swiper-container-flip .swiper-slide-shadow-left,
 .swiper-container-cube .swiper-slide-shadow-right,
 .swiper-container-flip .swiper-slide-shadow-right {
-  z-index: 0;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -448,7 +441,6 @@ button.swiper-pagination-bullet {
   opacity: 0.6;
   -webkit-filter: blur(50px);
   filter: blur(50px);
-  z-index: 0;
 }
 /* Fade */
 .swiper-container-fade.swiper-container-free-mode .swiper-slide {
@@ -510,7 +502,6 @@ button.swiper-pagination-bullet {
   position: absolute;
   left: 1%;
   bottom: 3px;
-  z-index: 50;
   height: 5px;
   width: 98%;
 }
@@ -518,7 +509,6 @@ button.swiper-pagination-bullet {
   position: absolute;
   right: 3px;
   top: 1%;
-  z-index: 50;
   width: 5px;
   height: 98%;
 }
@@ -543,7 +533,6 @@ button.swiper-pagination-bullet {
   top: 50%;
   margin-left: -21px;
   margin-top: -21px;
-  z-index: 10;
   -webkit-transform-origin: 50%;
   -moz-transform-origin: 50%;
   transform-origin: 50%;

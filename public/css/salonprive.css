@@ -1,0 +1,541 @@
+/*intro*/
+section#salonprive{
+    background: url(/assets/images/invitation/Page-Invitations.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; width: 100%;
+    position: relative;
+}
+
+section#salonprive>div{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+  font-size: 53px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+  top: 600px;
+}
+
+
+#swipedownDuck{
+    text-shadow: 0px 0px 18.69px rgba(0, 0, 0, 0.46);
+    width: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*page*/
+
+#salonprive-content{
+    background-color: rgb(32,32,32);
+    width: 100%;
+}
+
+#salonprive-content #legend-fields{
+    font-size: 10.5px;
+    font-family: "LeMonde Livre Classic";
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.2;
+    text-align: left;
+    width: auto;
+    padding-left: 20px;
+    float: left;
+}
+
+
+/*Intro salon*/
+
+#salon-intro{
+    width: 90%;
+    margin: 150px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#salon-intro div:first-child p{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+#salon-intro div:first-child p:last-child{
+  font-size: 18px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+#salon-intro div:first-child{
+    border-left: 1px solid rgb(200,174,136);
+    padding-left: 20px;
+    margin-left: 20px;
+    float: left;
+    width: 35%;
+    margin-bottom: 100px;
+}
+
+#salon-intro div:last-child{
+    float: left;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#salon-intro a{
+    font-size: 22px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200, 174, 136);
+    text-transform: uppercase;
+    padding: 25px 50px 20px 50px;
+    background-color: rgb(32, 32, 32);
+    border: 1px solid rgb(200, 174, 136);
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+#salon-intro a:hover{
+    color: rgb(32, 32, 32);
+    background-color: rgb(200, 174, 136);
+}
+
+/*Title*/
+.salon-title:first-child{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+
+.salon-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.salon-title h3 {
+  font-size: 25px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 74;
+}
+
+#ducktitle{
+    width: 25px;
+    margin: 0px 70px;
+}
+
+
+/*Form*/
+
+form{
+    clear: both;
+}
+
+#salonprive-content form{
+    width: 80%;
+    margin: 150px auto;
+    clear: both;
+    text-align: center;
+}
+
+#salonprive-content form input, select, div{
+    float: left;
+}
+
+#salonprive-content form p{
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    clear: both;
+    width: 60%;
+    margin: 20px auto;
+  }
+
+#salonprive-content form h3{
+    font-size: 23px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200, 174, 136);
+    text-transform: uppercase;
+    margin: 50px 0px;
+    padding-top: 50px;
+    text-align: left;
+    clear: both;
+}
+
+/*invited host*/
+
+#salonprive-content form .invitedhost p{
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    width: 40%;
+  }
+
+#salonprive-content form .invitedhost{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+.invitedhost input[type="radio"] {
+  display: none;
+}
+
+.invitedhost label {
+    display: inline-block;
+    background-color: rgb(32,32,32);
+    padding: 15px 20px 10px 20px;
+    font-family: "LeMonde Livre Classic";
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 20px 50px;
+    color: rgb(200,174,136);
+    border: 1px solid rgb(200,174,136);
+    text-transform: uppercase;
+}
+
+.invitedhost input[type="radio"]:checked+label {
+    background-color: rgb(200,174,136);
+    color: rgb(32,32,32);
+}
+
+
+/*Input*/
+
+form>input{
+    background: rgb(32,32,32);
+    border: none;
+    border-bottom: 1px solid rgb(200,174,136);
+    padding: 0px 20px;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+form>input,
+form>input::-webkit-input-placeholder{
+  font-size: 20px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+form .quarter-Form{
+    width: 17%;
+    margin: 0px 25px 50px 25px;
+}
+
+form .half-Form{
+    width: 40%;
+    margin: 0px 25px 50px 25px;
+}
+
+form .full-Form{
+    width: 88%;
+    margin: 0px 25px 50px 25px;
+}
+
+/*submit button*/
+
+#salonprive-content form>input:last-child{
+    float: none;
+    padding: 15px 20px 10px 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(200,174,136);
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200,174,136);
+    cursor: pointer;
+    float: right;
+    margin-right: 70px;
+}
+
+#salonprive-content form>input:last-child:hover{
+    background-color: rgb(200,174,136);
+    color: rgb(32,32,32);
+}
+
+/*Select*/
+
+.styled-select select {
+    background: transparent;
+    font-size: 20px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+    appearance: none; 
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-bottom: 50px;
+   }
+
+.styled-select {
+    height: 26px;
+    overflow: hidden;
+    background: url(/assets/images/uikit/arrows.png) no-repeat right rgb(32,32,32);
+    background-size: 8%;
+    border-bottom: 1px solid rgb(200,174,136);
+    width: 20%;
+    margin: 0px 25px 50px 25px;
+   }
+
+/*number*/
+
+form>label{
+    font-size: 20px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background: rgb(32, 32, 32);
+    border: none;
+    border-bottom: 1px solid rgb(200, 174, 136);
+    padding: 0px 0px 0px 20px;
+    outline: none;
+    margin-bottom: 50px;
+    float: left;
+    margin-top: 6px;
+}
+
+#salonprive-content form input#couverts{
+    width: 6%;
+    margin-right: 50px;
+}
+
+#salonprive-content form p#newsletter-label{
+    font-size: 16.5px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    /* clear: both; */
+    /* width: 50%; */
+    display: inline-block;
+    margin: 10px auto;
+    width: 40%;
+}
+
+/*Hide the arrows for the number input*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* .squaredOne */
+.squaredOne {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin: 0px auto;
+  background: #C8AE88;
+}
+.squaredOne>label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  background: #323232;
+}
+
+.squaredOne>label:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #C8AE88;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.squaredOne>label:hover::after {
+  opacity: 0.3;
+}
+.squaredOne input[type=checkbox] {
+  visibility: hidden;
+}
+.squaredOne input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+/* end .squaredOne */
+
+#salonprive-content>p{
+    font-size: 10.5px;
+    font-family: "LeMonde Livre Classic";
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.2;
+    text-align: left;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+#salonprive-content #picView{
+    background: url('/assets/images/salonprive/Page-Salon-Prive-2.jpg');
+    width: 100vw; height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+/*Responsive*/
+
+
+@media screen and (max-width: 640px) {
+    #invitation-content form .invitedhost p{
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+  }
+    
+    #invitation-content form p{
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    margin: 20px auto;
+  }
+    
+    /*Input*/
+
+form>input{
+    background: rgb(32,32,32);
+    border: none;
+    border-bottom: 1px solid rgb(200,174,136);
+    padding: 0px 20px;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+form>input,
+form>input::-webkit-input-placeholder{
+  font-size: 20px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+form .quarter-Form{
+    width: 27%;
+    margin: 0px 25px 50px 25px;
+}
+
+form .half-Form{
+    width: 80%;
+    margin: 0px 25px 50px 25px;
+}
+
+form .full-Form{
+    width: 80%;
+    margin: 0px 25px 50px 25px;
+}
+    
+    /*Select*/
+
+#styled-select select {
+    background: transparent;
+    font-size: 16px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+    appearance: none; 
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-bottom: 50px;
+   }
+
+#styled-select {
+    height: 26px;
+    overflow: hidden;
+    background: url(/assets/images/uikit/arrows.png) no-repeat right rgb(32,32,32);
+    background-size: 8%;
+    border-bottom: 1px solid rgb(200,174,136);
+    width: 37%;
+    margin: 0px 25px 50px 25px;
+   }
+    
+form>input,
+form>input::-webkit-input-placeholder{
+  font-size: 16px;
+  font-family: "LeMonde Livre Classic";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+    
+    
+    /*submit button*/
+
+#invitation-content form>input:last-child{
+    float: none;
+    padding: 15px 20px 10px 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(200,174,136);
+    font-size: 18px;
+    font-family: "LeMonde Livre Classic";
+    color: rgb(200,174,136);
+    cursor: pointer;
+    float: right;
+    margin-right: 0px;
+}
+
+#invitation-content form>input:last-child:hover{
+    background-color: rgb(200,174,136);
+    color: rgb(32,32,32);
+}
+}
