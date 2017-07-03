@@ -17,6 +17,17 @@
 <!--Jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	
+	<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+            });
+        });
+    </script>
+	
 </head>
 
 <body>
@@ -28,18 +39,18 @@
                  <ul>
                      <li><a href="lechef">Le chef</a></li>
                      <li><a href="heritage">Héritage</a></li>
-                     <li>La cave</li>
+                     <li><a href="lacave">La cave</a></li>
                  </ul>
               </li>
               
               <li>
                   venir
                   <ul>
-                      <li>La carte</li>
-                      <li>Réservation</li>
-                      <li>Invitation</li>
-                      <li>Salon privé</li>
-                      <li>Infos pratiques</li>
+                      <li><a href="carte">La carte </a></li>
+                      <li><a href="reservation">Réservation</a></li>
+                      <li><a href="invitation">Invitation</a>   </li>
+                      <li><a href="salonprive">Salon privé</a></li>
+                      <li><a href="contact">Contact</a></li>
                   </ul>
               </li>
               
@@ -52,16 +63,16 @@
               <li>
                   varier
                   <ul>
-                     <li>Le boulanger de la tour</li>
-                     <li>La rôtisserie de la tour</li>
-                     <li>La tour d'argent Tokyo</li>
+                     <li><a href="boulanger">Le boulanger de la tour</a></li>
+                     <li><a href="rotisserie">La rôtisserie de la tour</a></li>
+                     <li><a href="tokyo">La tour d'argent Tokyo</a></li>
                  </ul>
               </li>
               
               <li>
                   acheter
                   <ul>
-                     <li>Le comptoir</li>
+                     <li><a href="comptoir">Le comptoir</a></li>
                      <li><a href="http://www.comptoirdelatour.com/">E-boutique</a></li>
                  </ul>
               </li>
@@ -72,6 +83,8 @@
       
       <div>
           <h2>La tour d'argent<br>tokyo</h2>   
+          
+          <a class="js-scrollTo" href="#tokyo-content">
           <svg version="1.1" id="swipedownDuck" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 17.9 15.5" style="enable-background:new 0 0 17.9 15.5;" xml:space="preserve">
                 <style type="text/css">
@@ -83,53 +96,84 @@
                             c2.2,2.2,5.3,2.3,8.1,0.9l0.4,0.9c-3.7,3.5-7.9,9.1-8.4,13.8H718.4z"/>
                     </g>
                 </g>
-                </svg>
+            </svg>
+          </a>
       </div>
             
    </section>
       
-    <section id="tokyo-content">
-       
+  <section id="tokyo-content">
+      
+        <div id="tokyo-title">
+                  <svg version="1.1" id="ducktitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       viewBox="0 0 15.5 17.9" style="enable-background:new 0 0 15.5 17.9;" xml:space="preserve">
+                  <style type="text/css">
+                      .goldenduck{fill:#C8AE88;}
+                  </style>
+                  <g>
+                      <g id="heritage-TdA-Copy" transform="translate(-710.000000, -2735.000000)">
+                          <path id="aad" class="goldenduck" d="M725.5,2744.5c-4.7,0.4-10.3,4.7-13.8,8.4l-0.9-0.4c1.5-2.8,1.3-5.9-0.9-8.1v-0.9
+                              c2.2-2.2,2.3-5.3,0.9-8.1l0.9-0.4c3.5,3.7,9.1,7.9,13.8,8.4V2744.5z"/>
+                      </g>
+                  </g>
+                  </svg>
+
+                  <h3>Hotel new otani<br>tokyo</h3>
+
+                  <svg version="1.1" id="ducktitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       viewBox="0 0 15.5 17.9" style="enable-background:new 0 0 15.5 17.9;" xml:space="preserve">
+                  <style type="text/css">
+                      .goldenduck{fill:#C8AE88;}
+                  </style>
+                  <g>
+                      <g id="heritage-TdA-Copy" transform="translate(-710.000000, -2735.000000)">
+                          <path id="aad" class="goldenduck" d="M710,2743.4c4.7-0.4,10.3-4.7,13.8-8.4l0.9,0.4c-1.5,2.8-1.3,5.9,0.9,8.1v0.9
+                              c-2.2,2.2-2.3,5.3-0.9,8.1l-0.9,0.4c-3.5-3.7-9.1-7.9-13.8-8.4V2743.4z"/>
+                      </g>
+                  </g>
+                  </svg>
+              </div>
+              
+        <!-- Presentation -->
 
         <section id="presentationTokyo">
-                <img src="/assets/images/tokyo/chef-renaud-augier.png">
+                <div></div>
                 <div>
                     <p>
-                        Ancrée depuis toujours dans les terroirs et la tradition, il était dans l’ordre des choses que la Tour d’Argent ouvre un jour sa boulangerie.
+                        Né en 1981 près de Grenoble, Renaud Augier plonge dans l’univers de la cuisine à 16 ans dans un restaurant 1 étoile Michelin et développe son savoir-faire dans plusieurs restaurants deux et trois étoiles.
                     </p>
                     <p>
-                        Le Boulanger de la Tour, Alexis Bourgeot a pris ses quartiers dans cette nouvelle boutique juste en face de la Tour ; 2, rue du Cardinal Lemoine. Agé de 26 ans, Alexis a toujours voulu devenir boulanger. Passé par la pâtisserie de Cyril Lignac et par la Boulangerie des Invalides de Philippe-Marc Jocteur, Alexis a le goût du travail bien fait, le respect du produit, un joli savoir-faire et recherche la pleine satisfaction de ses clients. Dans son bel écrin de marbre clair et de bois massif avec un espace ouvert sur l’atelier de fabrication, les pains tout justes sortis du four apparaissent en majesté : baguettes, tourtes de meule, pains scandinave, pains complets, pains au maïs, pains Punchy et bien d’autres encore.
+                        En tant que stagiaire dans plusieurs restaurants connus, sa passion pour la gastronomie et son talent se ressentent dès ses premiers pas dans le métier. En 1999, il débute chez Georges Blanc à Vonnas, établissement trois étoiles Michelin.
                     </p>
                     <p>
-                        Dans les vitrines, les viennoiseries pur-beurre, les éclairs au chocolat Tour d’Argent, au café, les tartes, au citron, au chocolat ou encore aux fruits de saison aiguisent l’appétit. Les madeleines, moelleux aux noisettes et autres gâteaux de voyage vous rappellent aussi que l’enfance n’est pas loin.
+                        Après 6 ans chez Georges Blanc il poursuit son parcours chez le grand Michel Trama à l’Aubergade-Puymirol situé entre Bordeaux et Toulouse. Renaud Augier s’y épanouit et Michel Trama le recommande rapidement pour le Louis XV à l’Hôtel de Paris à Monaco, dirigé par Alain Ducasse, où cette star montante y poursuit l’art de la cuisine à partir de 2007.
                     </p>
                     <p>
-                        Où est la maîtresse de maison ? La voilà : posée en hauteur, la baguette de la Tour veille au grain. Vendue 1€ tout rond, elle est – tout comme l’intégralité de nos pains, viennoiseries, gâteaux de voyage et tartes –  confectionnée dans notre atelier devant vous, avec du levain naturel, longuement fermentée, de la farine des moulins de Chars et de Brasseuil et façonnée à la main ! 
-                        une merveille de savoir-faire.
+                        Renaud Augier poursuit son parcours et rejoint à partir de 2010 au Château les Crayères à Reims, un restaurant deux étoiles Michelin dans la belle région de Champagne dont l’équipe de cuisine est menée par l’un des Meilleurs Ouvriers de France Philippe Mille. Durant sa période aux Crayères, il en profite pour concourir au Prix International Taittinger en 2011 et obtient la deuxième place.
+                    </p>
+                    <p>
+                        Il rejoint enfin la Tour d’Argent Paris en 2012 et prend la direction des cuisines de la Tour d’Argent Tokyo en 2013. En 2015, il se lance pour défi de concourir aux Meilleurs Ouvriers de France et atteint les demi-finales sous la supervision de Laurent Delarbre, l’un des Meilleurs Ouvriers de France 2004 et ancien Chef de la Tour d’Argent à Paris.
                     </p>
                 </div>
         </section>
         
         <section id="intro-tokyo">
                 <div>
+                   <h3>Héritage</h3>
                     <p>
-                        À la Rôtisserie d’Argent, maison vivante et chaleureuse, on ne se dédit pas : on assume pleinement notre héritage gastronomique bourgeois.
+                        Né d’une grande amitié et d’une admiration mutuelle entre le Président Yoneichi Otani et Claude Terrail, la Tour d’Argent ouvre le 4 septembre 1984. C’est alors l’un des tout premiers grands restaurants français au Japon.
                     </p>
                     <p>
-                        Sympathique bouchon lyonnais acquis en 1989 par Claude Terrail, le restaurant a naturellement évolué au fil des ans pour devenir un bistrot typiquement parisien. Sa fameuse rôtissoire est le cœur des lieux, un cœur qui ne s’arrête jamais de battre et anime les murs de cet esprit “maison de campagne” en plein Paris, loin des snobismes d’un jour.
+                        À l’ouverture, Claude Terrail confie les rênes de cette somptueuse réplique à Christian Bollard. Directeur Général depuis ce jour, il dirige de main de maître ce prestigieux établissement donnant sur les jardins japonaisde l’Hôtel New Otani.
                     </p>
                     <p>
-                        Idéalement située Rive gauche entre les bords de Seine et la montagne Sainte-Geneviève, à deux pas du Quartier Latin, la Rôtisserie d’Argent fait de l’œil aux îles et Notre-Dame. Blottie contre sa grande sœur la Tour d’Argent, elle en respecte les valeurs, pour le plus grand plaisir de sa clientèle aussi exigeante qu’éclectique.
-                    </p>
-                    <p>
-                        Familles venues en voisines, hommes d’affaires, figures locales, politiques, artistes et autres, tous se retrouvent sur nos banquettes, et il n’est pas rare de voir converser des gens qui ne se connaissaient pas une heure auparavant. Qui sait : votre futur meilleur ami ou votre prochain associé est peut-être attablé à la Rôtisserie. Pourquoi ne pas l’y rejoindre ?
-                    </p>
-                    <p>
-                        Ici, la bonne chère est conçue comme le mariage de la qualité et du respect des saisons. La cuisine se fait au rythme de la broche qui tourne à son train de sénateur, donnant aux produits le temps d’exprimer tous leurs arômes et leurs arguments – comme une déclaration paisiblement mûrie. La parole est à madame la Rôtisserie.
+                        Passant les modes et les crises la Tour d’Argent Tokyo a construit sa réputation et sa clientèle, célébrant lors d’une magnifique soirée donnée en septembre 2004 ses vingt années d’existence et d’amitié avec le Japon.
                     </p>
                 </div>
-                <div></div>
+                <img src="/assets/images/tokyo/tokyo.png">
             </section>
+            
+        <!-- Boutons tokyo -->
         
         <div class="buttonsTokyo">
                 <a href="carte">La carte</a>
@@ -143,34 +187,35 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <img src="/assets/images/rotisserie/Rotisserie-dargent-2.jpg" alt="Assiette" class="swiper-slide">
-                        <img src="/assets/images/rotisserie/Rotisserie-dargent-3.jpg" alt="Assiette" class="swiper-slide">
-                        <img src="/assets/images/rotisserie/Rotisserie-dargent-4.jpg" alt="Assiette" class="swiper-slide">
-                        <img src="/assets/images/rotisserie/Rotisserie-dargent-5.jpg" alt="Assiette" class="swiper-slide">
+                        <img src="/assets/images/tokyo/Page-Tour-dArgent-Tokyo-n%C2%B03.jpg" alt="Assiette" class="swiper-slide">
+                        <img src="/assets/images/tokyo/Page-Tour-dArgent-Tokyo-n%C2%B04-2-1.jpg" alt="Assiette" class="swiper-slide">
+                        <img src="/assets/images/tokyo/Page-Tour-dArgent-Tokyo-n%C2%B05-1.jpg" alt="Assiette" class="swiper-slide">
                     </div>
             
         </section>
+        
+        <!-- Map -->
       
         <section id="contact-map"> 
                 <div>
                     <p>
-                        15 Quai de la Tournelle, 75005 Paris, France
+                         4, Kioi-cho, 1, Chiyoda, Tokyo, Japon
                     </p>
                     <p>
-                        Réservation par téléphone: + 33(0)1 43 54 23 31 <br>
-                        E-mail : resa@tourdargent.com
+                        Hôtel New Otani <br>
+                        Tél. : +81 (0) 3 3239 3111
                     </p>
                     <p>
-                        Fermé dimanche & lundi
+                        Ouvert tous les jours à dîner <br>
+                        sauf le lundi. 1er service à 17h30.
                     </p>
                     <p>
-                        Service Voiturier
-                        Métro Pont-Marie
-                        Nous n’acceptons pas les règlements par chèque.
+                        tourdargent@newotani.co.jp <br>
+                        www.latourdargent.jp
                     </p>
                 </div>
                 
-                <iframe src="https://snazzymaps.com/embed/862" width="500px" height="300px" style="border:none;"></iframe>
+                <iframe src="https://snazzymaps.com/embed/935" width="500px" height="300px" style="border:none;"></iframe>
           </section>
       
         <footer>

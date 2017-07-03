@@ -17,29 +17,40 @@
 <!--Jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	
+	<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+	
 </head>
 
 <body>
  
- <header>
+<header>
           <ul id="menuheader">
               <li>
                  découvrir
                  <ul>
                      <li><a href="lechef">Le chef</a></li>
                      <li><a href="heritage">Héritage</a></li>
-                     <li>La cave</li>
+                     <li><a href="lacave">La cave</a></li>
                  </ul>
               </li>
               
               <li>
                   venir
                   <ul>
-                      <li>La carte</li>
-                      <li>Réservation</li>
-                      <li>Invitation</li>
-                      <li>Salon privé</li>
-                      <li>Infos pratiques</li>
+                      <li><a href="carte">La carte </a></li>
+                      <li><a href="reservation">Réservation</a></li>
+                      <li><a href="invitation">Invitation</a>   </li>
+                      <li><a href="salonprive">Salon privé</a></li>
+                      <li><a href="contact">Contact</a></li>
                   </ul>
               </li>
               
@@ -52,16 +63,16 @@
               <li>
                   varier
                   <ul>
-                     <li>Le boulanger de la tour</li>
-                     <li>La rôtisserie de la tour</li>
-                     <li>La tour d'argent Tokyo</li>
+                     <li><a href="boulanger">Le boulanger de la tour</a></li>
+                     <li><a href="rotisserie">La rôtisserie de la tour</a></li>
+                     <li><a href="tokyo">La tour d'argent Tokyo</a></li>
                  </ul>
               </li>
               
               <li>
                   acheter
                   <ul>
-                     <li>Le comptoir</li>
+                     <li><a href="comptoir">Le comptoir</a></li>
                      <li><a href="http://www.comptoirdelatour.com/">E-boutique</a></li>
                  </ul>
               </li>
@@ -71,7 +82,8 @@
   <section id="lechef">
       
       <div>
-          <h2>Le chef</h2>   
+          <h2>Le chef</h2>
+          <a class="js-scrollTo" href="#lechef-content">
           <svg version="1.1" id="swipedownDuck" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 17.9 15.5" style="enable-background:new 0 0 17.9 15.5;" xml:space="preserve">
                 <style type="text/css">
@@ -83,7 +95,8 @@
                             c2.2,2.2,5.3,2.3,8.1,0.9l0.4,0.9c-3.7,3.5-7.9,9.1-8.4,13.8H718.4z"/>
                     </g>
                 </g>
-                </svg>
+            </svg>
+            </a>
       </div>
             
    </section>

@@ -113,6 +113,8 @@ form>input::-webkit-input-placeholder{
     border-radius: 25px;
     margin: 20px 40px 20px 0px;
     color: white;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .hour input[type="radio"]:checked+label {
@@ -165,6 +167,8 @@ form>input:last-child{
     font-family: "LeMonde Livre Classic";
     color: rgb(200,174,136);
     cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 form>input:last-child:hover{

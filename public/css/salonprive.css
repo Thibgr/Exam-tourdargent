@@ -1,6 +1,6 @@
 /*intro*/
 section#salonprive{
-    background: url(/assets/images/invitation/Page-Invitations.jpg) ;
+    background: url(/assets/images/salonprive/Salon-prive.jpg) ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,6 +109,8 @@ h2 {
     border: 1px solid rgb(200, 174, 136);
     border-radius: 50px;
     text-decoration: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #salon-intro a:hover{
@@ -186,46 +188,6 @@ form{
     clear: both;
 }
 
-/*invited host*/
-
-#salonprive-content form .invitedhost p{
-    font-size: 18px;
-    font-family: "LeMonde Livre Classic";
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: center;
-    width: 40%;
-  }
-
-#salonprive-content form .invitedhost{
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-
-.invitedhost input[type="radio"] {
-  display: none;
-}
-
-.invitedhost label {
-    display: inline-block;
-    background-color: rgb(32,32,32);
-    padding: 15px 20px 10px 20px;
-    font-family: "LeMonde Livre Classic";
-    font-size: 23px;
-    cursor: pointer;
-    border-radius: 25px;
-    margin: 20px 50px;
-    color: rgb(200,174,136);
-    border: 1px solid rgb(200,174,136);
-    text-transform: uppercase;
-}
-
-.invitedhost input[type="radio"]:checked+label {
-    background-color: rgb(200,174,136);
-    color: rgb(32,32,32);
-}
-
 
 /*Input*/
 
@@ -274,6 +236,8 @@ form .full-Form{
     cursor: pointer;
     float: right;
     margin-right: 70px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #salonprive-content form>input:last-child:hover{
@@ -375,6 +339,8 @@ input[type="number"] {
   left: 4px;
   cursor: pointer;
   background: #323232;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .squaredOne>label:after {

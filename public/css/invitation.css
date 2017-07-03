@@ -152,6 +152,8 @@ h2 {
     color: rgb(200,174,136);
     border: 1px solid rgb(200,174,136);
     text-transform: uppercase;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .invitedhost input[type="radio"]:checked+label {
@@ -207,12 +209,17 @@ form .full-Form{
     cursor: pointer;
     float: right;
     margin-right: 70px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #invitation-content form>input:last-child:hover{
     background-color: rgb(200,174,136);
     color: rgb(32,32,32);
 }
+
+
+
 
 /*Select*/
 

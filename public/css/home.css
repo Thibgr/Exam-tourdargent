@@ -34,14 +34,16 @@ header #menuheader li img{
     float: left;
 }
 
-header #menuheader li{
+header #menuheader>li{
     font-family: "LeMonde Livre Classic";
     color: rgb(200,174,136);
     text-transform: uppercase;
     text-decoration: none;
+    position: relative;
+    font-size: 18px;
 }
 
-header #menuheader li:hover{
+header #menuheader>li:hover{
     color: rgb(255,255,255);
 }
 
@@ -75,10 +77,32 @@ header #menuheader{
 
 #menuheader ul{
     display: none;
+    text-align: center;
+    
 }
 
 #menuheader li:hover > ul{
-        display: block;
+    display: block;
+    position: absolute;
+    width: 200px;
+    font-size: 13px;
+    text-align: left;
+    padding: 5px 0px;
+    margin: 0 auto;
+}
+
+#menuheader li:hover > ul li{
+    
+    padding: 5px 0px;
+}
+
+#menuheader li:hover > ul a{
+    color: white;
+    text-decoration: none;
+}
+
+#menuheader li:hover > ul a:hover{
+    color: rgb(200,174,136);
 }
 
 /*footer*/

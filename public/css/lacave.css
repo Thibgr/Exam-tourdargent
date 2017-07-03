@@ -177,12 +177,20 @@ h2 {
 #Eboutique div a{
     font-size: 22px;
     font-family: "LeMonde Livre Classic";
-    color: rgb(32, 32, 32);
+    color: rgb(200,174,136);
     text-transform: uppercase;
     padding: 25px 50px 20px 50px;
-    background-color: rgb(200, 174, 136);
+    background-color: rgb(32,32,32);
     border-radius: 50px;
     text-decoration: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border: 1px solid rgb(200,174,136);
+}
+
+#Eboutique div a:hover{
+    background-color: rgb(200,174,136);
+    color: rgb(32,32,32);
 }
 
 /*Responsive*/

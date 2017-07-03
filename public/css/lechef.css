@@ -93,8 +93,9 @@ h2 {
 #exerguechef{
     text-align: center;
     width: 60%;
-    margin: 0 auto;
+    margin: 150px auto 0px auto;
     clear: both;
+    padding-top: 100px;
 }
 
 #exerguechef p{
