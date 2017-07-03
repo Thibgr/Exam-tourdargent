@@ -10,8 +10,19 @@
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/carte.css">
     
-<!--Script for centering-->
+<!--Script-->
     <script>window.onload=function(){setInterval(function(){document.getElementsByTagName("body")[0].style.height=window.innerHeight+"px"},0);}</script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                return false;
+            });
+        });
+    </script>
     
 <!--Jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -70,7 +81,8 @@
   <section id="carte">
       
       <div>
-          <h2>Carte</h2>   
+          <h2 class="reg-text">Carte</h2>   
+          <a class="js-scrollTo" href="#carte-content">
           <svg version="1.1" id="swipedownDuck" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 17.9 15.5" style="enable-background:new 0 0 17.9 15.5;" xml:space="preserve">
                 <style type="text/css">
@@ -83,6 +95,7 @@
                     </g>
                 </g>
                 </svg>
+          </a>
       </div>
             
    </section>
@@ -706,8 +719,7 @@
       <footer>
           <ul id="footerleft">
               <li><a href="#">mentions légales</a></li>
-              <li><a href="#">recrutement</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="contact">contact</a></li>
               <li><a href="https://tourdargent.com/blog/">ag-mag</a></li>
           </ul>
           

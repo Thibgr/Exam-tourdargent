@@ -25,6 +25,17 @@
         $( "#datepicker" ).datepicker();
       } );
     </script>
+    
+    <script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+            });
+        });
+    </script>
 
 	
 </head>
@@ -81,7 +92,8 @@
   <section id="salonprive">
       
       <div>
-          <h2>Salon privé</h2>   
+          <h2 class="reg-text">Salon privé</h2>   
+          <a class="js-scrollTo" href="#salonprive-content">
           <svg version="1.1" id="swipedownDuck" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 17.9 15.5" style="enable-background:new 0 0 17.9 15.5;" xml:space="preserve">
                 <style type="text/css">
@@ -93,7 +105,8 @@
                             c2.2,2.2,5.3,2.3,8.1,0.9l0.4,0.9c-3.7,3.5-7.9,9.1-8.4,13.8H718.4z"/>
                     </g>
                 </g>
-                </svg>
+            </svg>
+          </a>    
       </div>
             
    </section>
@@ -223,8 +236,7 @@
 <footer>
           <ul id="footerleft">
               <li><a href="#">mentions légales</a></li>
-              <li><a href="#">recrutement</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="contact">contact</a></li>
               <li><a href="https://tourdargent.com/blog/">ag-mag</a></li>
           </ul>
           
@@ -236,7 +248,7 @@
               <li><a href="https://www.flickr.com/photos/tourdargentparis/" id="flickr"></a></li>
               <li><a href="https://www.linkedin.com/company-beta/3162633/" id="linkedIn"></a></li>
           </ul>
-</footer>
+      </footer>
   </section>
   
   

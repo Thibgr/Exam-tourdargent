@@ -50,6 +50,8 @@ header #menuheader>li:hover{
 
 header ul{
     list-style-type: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 
@@ -64,6 +66,8 @@ header {
     position: fixed;
     width: 100%;
     z-index: 20;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 header #menuheader{
@@ -71,6 +75,25 @@ header #menuheader{
     width: 1000px;
     justify-content: space-around;
     align-items: center;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+/*page*/
+
+.reg-text {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 1s ease, -webkit-transform 0.66667s ease-out;
+  transition: opacity 1s ease, -webkit-transform 0.66667s ease-out;
+  transition: transform 0.66667s ease-out, opacity 1s ease;
+  transition: transform 0.66667s ease-out, opacity 1s ease, -webkit-transform 0.66667s ease-out;
+}
+.reg-text.loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /*Menus déroulants*/
@@ -78,7 +101,13 @@ header #menuheader{
 #menuheader ul{
     display: none;
     text-align: center;
-    
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+#menuheader li {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #menuheader li:hover > ul{
@@ -89,20 +118,28 @@ header #menuheader{
     text-align: left;
     padding: 5px 0px;
     margin: 0 auto;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #menuheader li:hover > ul li{
     
     padding: 5px 0px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #menuheader li:hover > ul a{
     color: white;
     text-decoration: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #menuheader li:hover > ul a:hover{
     color: rgb(200,174,136);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 /*footer*/

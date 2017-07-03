@@ -2,7 +2,9 @@
 
 $('section#secsplash').delay(1000).hide(0)
 $('section#home').delay(1000).fadeIn(500)
-$('header').delay(1000).fadeIn(500);
+$('header').delay(1000).fadeIn(500)
+$('#swipedownDuck').hide(0).delay(700).fadeIn(500);
+//$('#swipedownDuck').delay(1000).css('display','block');
 
  $(document).ready(function () {
     //initialize swiper when document ready  
@@ -25,3 +27,11 @@ var map;
           zoom: 16
         });
       }
+
+// Text effect
+
+$(document).on('ready', function () {
+    setTimeout(function () {
+        $('.reg-text').addClass('loaded');
+    }, 700);
+});

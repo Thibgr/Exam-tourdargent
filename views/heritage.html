@@ -12,8 +12,19 @@
     <link rel="stylesheet" href="/assets/css/swiper.css">
     <link rel="stylesheet" href="/assets/css/timelinr/style.css">
     
-<!--Script for centering-->
+<!--Script-->
     <script>window.onload=function(){setInterval(function(){document.getElementsByTagName("body")[0].style.height=window.innerHeight+"px"},0);}</script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                return false;
+            });
+        });
+    </script>
     
 <!--Jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -75,7 +86,9 @@
   <section id="heritage">
 
           <div>
-              <h2>Héritage</h2>
+              <h2 class="reg-text">Héritage</h2>
+              
+              <a class="js-scrollTo" href="#heritage-content">
 
               <svg version="1.1" id="swipedownDuck" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 17.9 15.5" style="enable-background:new 0 0 17.9 15.5;" xml:space="preserve">
@@ -88,8 +101,8 @@
                                 c2.2,2.2,5.3,2.3,8.1,0.9l0.4,0.9c-3.7,3.5-7.9,9.1-8.4,13.8H718.4z"/>
                         </g>
                     </g>
-
               </svg>
+              </a>
           </div>
     </section>
 
@@ -196,23 +209,22 @@
                  <div id="grad_left"></div>
               </div>
 
-     <footer>
-              <ul id="footerleft">
-                  <li><a href="#">mentions légales</a></li>
-                  <li><a href="#">recrutement</a></li>
-                  <li><a href="#">contact</a></li>
-                  <li><a href="https://tourdargent.com/blog/">ag-mag</a></li>
-              </ul>
-
-              <ul id="footerright">
-                  <li><a href="https://fr-fr.facebook.com/latourdargent" id="Facebook"></a></li>
-                  <li><a href="https://twitter.com/latourdargent" id="Twitter"></a></li>
-                  <li><a href="https://instagram.com/tourdargentparis" id="Instagram"></a></li>
-                  <li><a href="https://plus.google.com/+TourdArgentParis" id="googleplus"></a></li>
-                  <li><a href="https://www.flickr.com/photos/tourdargentparis/" id="flickr"></a></li>
-                  <li><a href="https://www.linkedin.com/company-beta/3162633/" id="linkedIn"></a></li>
-              </ul>
-</footer>
+<footer>
+          <ul id="footerleft">
+              <li><a href="#">mentions légales</a></li>
+              <li><a href="contact">contact</a></li>
+              <li><a href="https://tourdargent.com/blog/">ag-mag</a></li>
+          </ul>
+          
+          <ul id="footerright">
+              <li><a href="https://fr-fr.facebook.com/latourdargent" id="Facebook"></a></li>
+              <li><a href="https://twitter.com/latourdargent" id="Twitter"></a></li>
+              <li><a href="https://instagram.com/tourdargentparis" id="Instagram"></a></li>
+              <li><a href="https://plus.google.com/+TourdArgentParis" id="googleplus"></a></li>
+              <li><a href="https://www.flickr.com/photos/tourdargentparis/" id="flickr"></a></li>
+              <li><a href="https://www.linkedin.com/company-beta/3162633/" id="linkedIn"></a></li>
+          </ul>
+      </footer>
   </section>
   
   
