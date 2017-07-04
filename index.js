@@ -1,8 +1,26 @@
 //Varaiables
 
-var express = require('express');
+var express = require('express'),
+    bodyParser = require('body-parser'),
+    mysql = require('mysql');
+
 var app = express(),
     port = 1337;
+
+var connection = function () {
+    return mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: 'root',
+        database: 'tourdargent',
+        socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
+    });
+}
+
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+app.use(bodyParser.json());
 
 //Secure
 
@@ -80,4 +98,17 @@ app.get('/comptoir', function(req,res){
 
 app.listen(port, function(){
     console.log('app listening on port ' + port)
+});
+
+
+//POST BOOKINGS
+app.post('/reservation', function (req, res) {
+    var q = "INSERT INTO reservation (day, people, number, hour) VALUES ('" + req.body.day + "', '" + req.body.people + "', '" + req.body.number + "', '" + req.body.hour + "');"
+    var co = connection();
+    co.query(q, function (error, results, fields) {
+        if (error) return console.log(error);
+
+        res.sendFile(__dirname + '/views/reservation.html');
+    });
+    co.end();
 });

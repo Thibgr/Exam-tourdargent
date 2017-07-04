@@ -79,6 +79,8 @@ h2 {
     border: 1px solid rgb(200,174,136);
     text-transform: uppercase;
     text-decoration: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .buttonsTokyo a:hover {

@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="/assets/css/jquery/jquery-ui.structure.css">
     <link rel="stylesheet" href="/assets/css/jquery/jquery-ui.theme.css">
     
+<!--Jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery-ui.js"></script>
+	
+    
 <!--Script-->
     <script>window.onload=function(){setInterval(function(){document.getElementsByTagName("body")[0].style.height=window.innerHeight+"px"},0);}</script>
     
@@ -32,14 +37,6 @@
         $( "#datepicker" ).datepicker();
       } );
     </script>
-    
-<!--Jquery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery-ui.js"></script>
-	
-	
-
-	
 </head>
 
 <body>
@@ -117,12 +114,12 @@
        
     <!--Form-->
     
-    <form action="">
+    <form action="/reservation" method="post">
         
-        <input type="text" id="datepicker" placeholder="Date">
+        <input type="text" id="datepicker" placeholder="Date" name="day">
         
         <div id="styled-select">  
-            <select name="invited" id="invited">
+            <select name="people" id="invited">
                 <option value="personnes" selected>personnes</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -133,22 +130,22 @@
         </div>
 
 
-        <input type="tel" placeholder="Téléphone" id="telephoneInput">
+        <input type="tel" placeholder="Téléphone" id="telephoneInput" name="number">
 
 
         <div class="hour">
             <h3>Déjeuner</h3>
 
-            <input type="radio" id="1200" name="reservation" value="1200">
+            <input type="radio" id="1200" name="hour" value="1200">
             <label for="1200">12h00</label>
 
-            <input type="radio" id="1230" name="reservation" value="1230">
+            <input type="radio" id="1230" name="hour" value="1230">
             <label for="1230">12h30</label>
 
-            <input type="radio" id="1300" name="reservation" value="1300">
+            <input type="radio" id="1300" name="hour" value="1300">
             <label for="1300">13h00</label>
 
-            <input type="radio" id="1330" name="reservation" value="1330">
+            <input type="radio" id="1330" name="hour" value="1330">
             <label for="1330">13h30</label>
         </div>
     
@@ -156,22 +153,22 @@
         <div class="hour">
             <h3>Diner</h3>
             
-            <input type="radio" id="1900" name="reservation" value="1900">
+            <input type="radio" id="1900" name="hour" value="1900">
             <label for="1900">19h00</label>
             
-            <input type="radio" id="1930" name="reservation" value="1930">
+            <input type="radio" id="1930" name="hour" value="1930">
             <label for="1930">19h30</label>
             
-            <input type="radio" id="2000" name="reservation" value="2000">
+            <input type="radio" id="2000" name="hour" value="2000">
             <label for="2000">20h00</label>
             
-            <input type="radio" id="2030" name="reservation" value="2030">
+            <input type="radio" id="2030" name="hour" value="2030">
             <label for="2030">20h30</label>
             
-            <input type="radio" id="2100" name="reservation" value="2100">
+            <input type="radio" id="2100" name="hour" value="2100">
             <label for="2100">21h00</label>
             
-            <input type="radio" id="2130" name="reservation" value="2130">
+            <input type="radio" id="2130" name="hour" value="2130">
             <label for="2130">21h30</label>
         </div>
         
